@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="https://www.pasargadpolymer.com/wp-content/uploads/2018/10/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/style.css" />
     <title>Pasargad Polymer</title>
@@ -12,7 +12,7 @@
     <div class="bg-gray-800 text-white text-sm py-2">
       <div class="container flex justify-between items-center">
         <div class="flex items-center">
-          <button class="flex items-center gap-1 mr-10">
+          <button class="md:flex items-center gap-1 mr-10 hidden">
             <svg width="25px" height="23px" viewBox="-4 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     
             <title>location</title>
@@ -37,7 +37,7 @@
             </svg>
           <span class="ml-4 mt-2">۲۶۴۰۹۰۶۸ - ۲۲۲۷۱۶۱۷ (۹۸۲۱+)</span></button>
         </div>
-        <div class="flex gap-3 ml-[-40px]">
+        <div class="flex gap-3 ml-3  md:ml-[-40px] ">
           <a href="#" class="text-white"
             ><svg
               width="25px"
@@ -83,12 +83,12 @@
 
     <!-- Navbar -->
     <nav class="py-4 bg-gray-100 shadow-lg">
-      <div class="container mx-auto flex gap-20 items-center">
-        <div class="">
+      <div class="container mx-auto flex gap-20 items-center justify-between md:justify-start">
+        <div>
           <img
             src="https://www.pasargadpolymer.com/wp-content/uploads/2018/08/logo-header.png"
             alt=""
-            class="h-[40px]"
+            class="h-[40px] mr-3 md:mr-0"
           />
         </div>
         <div class="hidden md:flex gap-6 items-center">
@@ -125,24 +125,32 @@
             <option value="ar">عربی 🇸🇦</option>
           </select>
         </div>
-        
-        <button class="md:hidden text-gray-500 focus:outline-none">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4 6h16M4 12h16m-7 6h7"
-            />
+        <button id="menu-button" class="md:hidden text-gray-500 focus:outline-none ml-3">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
           </svg>
         </button>
-      </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="fixed inset-0 z-30 bg-gray-900 bg-opacity-90 flex justify-end items-center transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+          <div class="bg-white w-3/4 h-full flex flex-col items-center py-8 relative shadow-lg">
+            <!-- Close Button -->
+            <button id="close-menu" class="absolute top-4 left-4 text-gray-600 hover:text-gray-900 transition duration-300">
+              <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+            <!-- Navigation Links -->
+            <ul class="flex flex-col gap-6 text-lg font-semibold text-center mt-12">
+              <li><a href="#" class="hover:text-orange-500 transition duration-300">صفحه اصلی</a></li>
+              <li><a href="#" class="hover:text-orange-500 transition duration-300">نمونه کارها</a></li>
+              <li><a href="#" class="hover:text-orange-500 transition duration-300">گالری تصاویر</a></li>
+              <li><a href="#" class="hover:text-orange-500 transition duration-300">بلاگ</a></li>
+              <li><a href="#" class="hover:text-orange-500 transition duration-300">تماس با ما</a></li>
+              <li><a href="#" class="hover:text-orange-500 transition duration-300">درباره ما</a></li>
+            </ul>
+          </div>
+        </div>
     </nav>
 
     <!-- Hero Section -->
@@ -167,5 +175,22 @@
         </button>
     </div>
   </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuButton = document.getElementById("menu-button");
+      const closeButton = document.getElementById("close-menu");
+      const menu = document.getElementById("mobile-menu");
+  
+      menuButton.addEventListener("click", function () {
+        menu.classList.remove("translate-x-full");
+      });
+  
+      closeButton.addEventListener("click", function () {
+        menu.classList.add("translate-x-full");
+      });
+    });
+  </script>
+  
   <body>
 </html>
