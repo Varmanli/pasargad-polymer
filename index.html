@@ -451,6 +451,63 @@
     </div>
   </section>
   
+  <!-- contact  -->
+  <section class=" text-white bg-gray-800 w-[90%] flex mx-auto py-12 px-8 rounded-xl mb-2">
+    <div class="container  mx-auto flex flex-col-reverse md:flex-row-reverse justify-center items-center gap-8 ">
+      <!-- فرم درخواست مشاوره -->
+      <div class="bg-white text-gray-800 p-6 rounded-lg shadow-md w-full md:w-3/4 ml-auto basis-2/5">
+        <h3 class="text-xl font-bold mb-4">درخواست مشاوره چاپ</h3>
+        <form action="#" method="POST" class="flex flex-col gap-4">
+          <input type="text" placeholder="نام و نام خانوادگی" class="border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+          <input type="email" placeholder="ایمیل" class="border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+          <input type="text" placeholder="شماره تماس" class="border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+          <textarea placeholder="متن پیام" rows="4" class="border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+          <button type="submit" class="bg-green-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-600 transition">ارسال</button>
+        </form>
+      </div>
+  
+      <!-- سوالات متداول -->
+      <div class="w-full basis-2/3">
+        <h3 class="text-2xl  font-bold mb-9">پرسش های متداول کاربران</h3>
+        <p class="text-gray-300 mb-6">در این بخش به سوالات پرتکرار مشتریان درباره سفارش چاپ، مراحل کار، و نحوه پرداخت پاسخ داده شده است.</p>
+        <div class="space-y-4">
+          <!-- سوال 1 -->
+          <div class="bg-gray-700 rounded-lg overflow-hidden">
+            <button class="w-full text-left px-6 py-4 flex items-center justify-between focus:outline-none" onclick="toggleFaq(1)">
+              چگونه می‌توان سفارش چاپ ثبت کرد؟
+              <span id="icon-1" class="transform transition-transform">&#9654;</span>
+            </button>
+            <div id="faq-1" class="px-6 py-4 hidden">
+              <p>برای ثبت سفارش چاپ، می‌توانید فرم موجود در صفحه را تکمیل کنید یا از طریق شماره تماس‌های موجود با ما در ارتباط باشید.</p>
+            </div>
+          </div>
+  
+          <!-- سوال 2 -->
+          <div class="bg-gray-700 rounded-lg overflow-hidden">
+            <button class="w-full text-left px-6 py-4 flex items-center justify-between focus:outline-none" onclick="toggleFaq(2)">
+              هزینه‌های چاپ چگونه محاسبه می‌شوند؟
+              <span id="icon-2" class="transform transition-transform">&#9654;</span>
+            </button>
+            <div id="faq-2" class="px-6 py-4 hidden">
+              <p>هزینه‌های چاپ بر اساس نوع خدمات، تعداد سفارش و نوع مواد اولیه محاسبه می‌شوند. برای اطلاعات بیشتر، با ما تماس بگیرید.</p>
+            </div>
+          </div>
+  
+          <!-- سوال 3 -->
+          <div class="bg-gray-700 rounded-lg overflow-hidden">
+            <button class="w-full text-left px-6 py-4 flex items-center justify-between focus:outline-none" onclick="toggleFaq(3)">
+              زمان تحویل سفارش‌ها چقدر است؟
+              <span id="icon-3" class="transform transition-transform">&#9654;</span>
+            </button>
+            <div id="faq-3" class="px-6 py-4 hidden">
+              <p>زمان تحویل سفارش‌ها به نوع خدمات و حجم سفارش بستگی دارد. معمولاً بین ۳ تا ۷ روز کاری سفارش‌ها آماده می‌شوند.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const menuButton = document.getElementById("menu-button");
@@ -485,6 +542,18 @@
         },
       },
     });
+    function toggleFaq(id) {
+    const content = document.getElementById(`faq-${id}`);
+    const icon = document.getElementById(`icon-${id}`);
+
+    if (content.classList.contains("hidden")) {
+      content.classList.remove("hidden");
+      icon.style.transform = "rotate(90deg)";
+    } else {
+      content.classList.add("hidden");
+      icon.style.transform = "rotate(0deg)";
+    }
+  }
   </script>
   
   <body>
