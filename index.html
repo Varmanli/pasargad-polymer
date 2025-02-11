@@ -258,169 +258,68 @@
         </button>
       </div>
     </section>
-
-    <section class="py-16">
-      <div class="container mx-auto px-8 md:px-20 text-center">
-        <h2 class="text-xl md:text-4xl font-bold mb-4">
-          خدماتی که در آن‌ها <span class="text-blue-400">خاص هستیم.</span>
+    <section class="relative mx-auto px-3 md:px-24  py-16 bg-gray-800 text-gray-100 flex flex-col items-center justify-center text-center overflow-hidden" dir="rtl">
+      <!-- بک‌گراند تصویر -->
+      <div class="absolute inset-0">
+        <img src="https://www.pasargadpolymer.com/wp-content/uploads/2019/01/shutterstock_1036766083.jpg" alt="تصویر" class="w-full h-full object-cover opacity-20">
+      </div>
+    
+      <!-- متن و عنوان -->
+      <div class="relative z-10 max-w-2xl">
+        <h1 class="text-2xl md:text-4xl font-extrabold text-gray-300 mb-4 leading-tight">
+          ما بهترین خدمات صنعتی را ارائه می‌دهیم
+        </h1>
+        <h2 class="text-xl md:text-2xl font-medium text-gray-400 mb-6">
+          ۳۵+ سال تجربه در صنایع جهانی
         </h2>
-        <p class="text-gray-400 mb-8 text-sm">
-          ارائه بهترین خدمات چاپ و بسته‌بندی با تکنولوژی روز دنیا
-        </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- خدمات قبل از چاپ -->
-          <div class="bg-gray-700 text-white p-6 rounded-lg shadow-md">
-            <div class="flex justify-center mb-4">
-              <img
-                src="./public/svg/print.svg"
-                alt="icon"
-                class="w-[100px]h-[100px]"
-              />
-            </div>
-            <h3 class="text-xl font-bold mb-4">خدمات قبل از چاپ</h3>
-            <p class="text-sm mb-4">
-              ارائه خدمات مشاوره و طراحی، انتخاب و رسیدن به طرح نهایی، انجام
-              مراحل پیش از چاپ.
-            </p>
-            <a
-              href="#"
-              class="text-blue-600 bg-white py-2 px-4 rounded-lg font-semibold flex gap-1 items-center justify-center hover:bg-gray-200 transition"
-            >
-              مشاهده خدمات
-              <img
-                src="./public/svg/arrow.svg"
-                alt="icon"
-                class="w-[100px]h-[100px]"
-              />
-            </a>
+      </div>
+    
+      <!-- آمار و ارقام -->
+      <div class="relative z-10 flex gap-6 mb-8">
+        <div class="bg-gray-700 p-6 rounded-lg text-center shadow-lg">
+          <p class="text-2xl font-bold text-blue-400">۳۲۶۰+</p>
+          <p class="text-sm text-gray-300">تمامی پروژه</p>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-lg text-center shadow-lg">
+          <p class="text-2xl font-bold text-blue-400">۱۱۰+</p>
+          <p class="text-sm text-gray-300">برنده جایزه</p>
+        </div>
+      </div>
+    
+      <!-- خدمات -->
+      <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 w-full max-w-5xl">
+        <div class="bg-gray-700 text-white p-6 rounded-lg shadow-md text-center">
+          <div class="flex justify-center mb-4">
+            <img src="./public/svg/print.svg" alt="icon" class="w-16 h-16">
           </div>
-
-          <!-- تولید فیلم و لیبل شرینک -->
-          <div class="bg-gray-700 text-white p-6 rounded-lg shadow-md">
-            <div class="flex justify-center mb-4">
-              <img
-                src="./public/svg/settings.svg"
-                alt="icon"
-                class="w-[100px]h-[100px]"
-              />
-            </div>
-            <h3 class="text-xl font-bold mb-4">تولید فیلم و لیبل شرینک</h3>
-            <p class="text-sm mb-4">
-              استفاده از باکیفیت‌ترین مواد اولیه در زمینه تولید انواع فیلم خام
-              رول به رول و برش خورده.
-            </p>
-            <a
-              href="#"
-              class="text-blue-600 bg-white py-2 px-4 rounded-lg font-semibold flex gap-1 items-center justify-center hover:bg-gray-200 transition"
-            >
-              مشاهده خدمات
-              <img src="./public/svg/arrow.svg" alt="icon" />
-            </a>
+          <h3 class="font-bold mb-4">خدمات قبل از چاپ</h3>
+          <p class="text-sm mb-4">مشاوره، طراحی و انجام مراحل پیش از چاپ.</p>
+        </div>
+        <div class="bg-gray-700 text-white p-6 rounded-lg shadow-md text-center">
+          <div class="flex justify-center mb-4">
+            <img src="./public/svg/settings.svg" alt="icon" class="w-16 h-16">
           </div>
-
-          <!-- چاپ انواع لفاف بسته بندی -->
-          <div class="bg-gray-700 text-white p-6 rounded-lg shadow-md">
-            <div class="flex justify-center mb-4">
-              <img
-                src="./public/svg/packings.svg"
-                alt="icon"
-                class="w-[100px]h-[100px]"
-              />
-            </div>
-            <h3 class="text-xl font-bold mb-4">چاپ انواع لفاف بسته‌بندی</h3>
-            <p class="text-sm mb-4">
-              چاپ انواع لفاف بسته‌بندی، opp، پشت چسبدار و انواع لیبل شرینک با
-              به‌روزترین دستگاه‌های چاپ.
-            </p>
-            <a
-              href="#"
-              class="text-blue-600 bg-white py-2 px-4 rounded-lg font-semibold flex gap-1 items-center justify-center hover:bg-gray-200 transition"
-            >
-              مشاهده خدمات
-              <img
-                src="./public/svg/arrow.svg"
-                alt="icon"
-                class="w-[100px]h-[100px]"
-              />
-            </a>
+          <h3 class="font-bold mb-4">تولید فیلم و لیبل شرینک</h3>
+          <p class="text-sm mb-4">تولید انواع فیلم خام رول و برش خورده.</p>
+        </div>
+        <div class="bg-gray-700 text-white p-6 rounded-lg shadow-md text-center">
+          <div class="flex justify-center mb-4">
+            <img src="./public/svg/packings.svg" alt="icon" class="w-16 h-16">
           </div>
-
-          <!-- خدمات بین‌المللی -->
-          <div class="bg-gray-700 text-white p-6 rounded-lg shadow-md">
-            <div class="flex justify-center mb-4">
-              <img
-                src="./public/svg/international.svg"
-                alt="icon"
-                class="w-[100px]h-[100px]"
-              />
-            </div>
-            <h3 class="text-xl font-bold mb-4">خدمات بین‌المللی</h3>
-            <p class="text-sm mb-4">
-              انجام کلیه امور پیش از چاپ، تولید فیلم و چاپ، با کیفیت بی‌نظیر در
-              همکاری با کشورهای همسایه.
-            </p>
-            <a
-              href="#"
-              class="text-blue-600 bg-white py-2 px-4 rounded-lg font-semibold flex gap-1 items-center justify-center hover:bg-gray-200 transition"
-            >
-              مشاهده خدمات
-              <img
-                src="./public/svg/arrow.svg"
-                alt="icon"
-                class="w-[100px]h-[100px]"
-              />
-            </a>
+          <h3 class="font-bold mb-4">چاپ انواع لفاف بسته‌بندی</h3>
+          <p class="text-sm mb-4">چاپ انواع لفاف بسته‌بندی، opp، لیبل شرینک.</p>
+        </div>
+        <div class="bg-gray-700 text-white p-6 rounded-lg shadow-md text-center">
+          <div class="flex justify-center mb-4">
+            <img src="./public/svg/international.svg" alt="icon" class="w-16 h-16">
           </div>
-          <!-- فناوری طراحی سه‌بعدی -->
-          <div class="bg-gray-700 text-white p-6 rounded-lg shadow-md">
-            <div class="flex justify-center mb-4">
-              <img
-                src="./public/svg/3d.svg"
-                alt="icon"
-                class="w-[100px]h-[100px]"
-              />
-            </div>
-            <h3 class="text-xl font-bold mb-4">فناوری طراحی سه‌بعدی</h3>
-            <p class="text-sm mb-4">
-              ارائه خدمات طراحی سه‌بعدی برای شبیه‌سازی و نمایش محصولات پیش از
-              تولید.
-            </p>
-            <a
-              href="#"
-              class="text-blue-600 bg-white py-2 px-4 rounded-lg font-semibold flex gap-1 items-center justify-center hover:bg-gray-200 transition"
-            >
-              مشاهده خدمات
-              <img src="./public/svg/arrow.svg" alt="icon" />
-            </a>
-          </div>
-          <!-- خدمات نوین -->
-          <div class="bg-gray-700 text-white p-6 rounded-lg shadow-md">
-            <div class="flex justify-center mb-4">
-              <img
-                src="./public/svg/services.svg"
-                alt="icon"
-                class="w-[100px]h-[100px]"
-              />
-            </div>
-            <h3 class="text-xl font-bold mb-4">خدمات نوین</h3>
-            <p class="text-sm mb-4">
-              ارائه خدمات نوآورانه در بسته‌بندی و چاپ با تکنولوژی روز دنیا.
-            </p>
-            <a
-              href="#"
-              class="text-blue-600 bg-white py-2 px-4 rounded-lg font-semibold flex gap-1 items-center justify-center hover:bg-gray-200 transition"
-            >
-              مشاهده خدمات
-              <img
-                src="./public/svg/arrow.svg"
-                alt="icon"
-                class="w-[100px]h-[100px]"
-              />
-            </a>
-          </div>
+          <h3 class=" font-bold mb-4">خدمات بین‌المللی</h3>
+          <p class="text-sm mb-4">همکاری با کشورهای همسایه در چاپ و بسته‌بندی.</p>
         </div>
       </div>
     </section>
+    
+    
     <!-- slider  -->
     <section class="bg-gray-800 mx-auto mb-24 px-2 md:pr-20 py-10">
       <div class="container mx-auto text-center">
@@ -627,116 +526,10 @@
       </div>
     </section>
     <!-- امار -->
-    <section
-      class="relative mx-auto px-3 md:px-24 my-20 py-16 bg-gray-800 text-gray-100 flex flex-col md:flex-row-reverse items-center justify-between overflow-hidden"
-      dir="rtl"
-    >
-      <!-- بک‌گراند -->
-      <div class="absolute inset-0">
-        <svg
-          class="w-full h-full"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 800 800"
-        >
-          <circle
-            cx="600"
-            cy="200"
-            r="400"
-            fill="none"
-            stroke="rgba(255, 255, 255, 0.1)"
-            stroke-width="1"
-          />
-          <circle
-            cx="550"
-            cy="150"
-            r="350"
-            fill="none"
-            stroke="rgba(255, 255, 255, 0.1)"
-            stroke-width="1"
-          />
-          <circle
-            cx="500"
-            cy="100"
-            r="300"
-            fill="none"
-            stroke="rgba(255, 255, 255, 0.1)"
-            stroke-width="1"
-          />
-          <circle
-            cx="450"
-            cy="50"
-            r="250"
-            fill="none"
-            stroke="rgba(255, 255, 255, 0.1)"
-            stroke-width="1"
-          />
-          <circle
-            cx="650"
-            cy="250"
-            r="450"
-            fill="none"
-            stroke="rgba(255, 255, 255, 0.1)"
-            stroke-width="1"
-          />
-          <circle
-            cx="700"
-            cy="300"
-            r="500"
-            fill="none"
-            stroke="rgba(255, 255, 255, 0.1)"
-            stroke-width="1"
-          />
-          <circle
-            cx="750"
-            cy="350"
-            r="550"
-            fill="none"
-            stroke="rgba(255, 255, 255, 0.1)"
-            stroke-width="1"
-          />
-        </svg>
-      </div>
-      <!-- تصویر -->
-      <div class="md:w-1/2 z-10 text-center">
-        <img
-          src="https://www.pasargadpolymer.com/wp-content/uploads/2019/01/shutterstock_1036766083.jpg"
-          alt="تصویر"
-          class="w-full rounded-lg h-auto shadow-lg"
-        />
-      </div>
-      <!-- ستون متن -->
-      <div class="md:w-2/3 p-6 z-10 text-right">
-        <!-- عنوان‌ها -->
-        <h1
-          class="text-2xl md:text-4xl font-extrabold text-gray-300 mb-4 leading-tight"
-        >
-          ما بهترین خدمات صنعتی را ارائه می‌دهیم
-        </h1>
-        <h2 class="text-xl md:text-2xl font-medium text-gray-400 mb-6">
-          ۳۵+ سال تجربه در صنایع جهانی
-        </h2>
-        <!-- آمار و ارقام -->
-        <div class="flex gap-4 mb-6">
-          <div class="bg-gray-700 p-6 rounded-lg text-center shadow-lg">
-            <p class="text-2xl font-bold text-blue-400">۳۲۶۰+</p>
-            <p class="text-sm text-gray-300">تمامی پروژه</p>
-          </div>
-          <div class="bg-gray-700 p-6 rounded-lg text-center shadow-lg">
-            <p class="text-2xl font-bold text-blue-400">۱۱۰+</p>
-            <p class="text-sm text-gray-300">برنده جایزه</p>
-          </div>
-        </div>
-        <!-- توضیحات -->
-        <p class="mb-4 md:ml-20 leading-relaxed text-gray-400">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-          از طراحان گرافیک است چابگراها و متون بلکه روزنامه و مجله در ستون و سطر
-          آنچنان که لازم است.
-        </p>
-      </div>
-    </section>
+  
     <!-- گالری نمونه کارها -->
     <section class="py-16 bg-gray-100">
-      <div class="container mx-auto px-5 ">
+      <div class="container mx-auto px-5">
         <div class="flex flex-col justify-between items-center md:flex-row">
           <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
             نمونه <span class="text-blue-500">کارهای ما</span>
@@ -916,7 +709,7 @@
     </div>
 
     <section class="py-16 bg-gray-100">
-      <div class="container mx-auto text-center px-5 ">
+      <div class="container mx-auto text-center px-5">
         <h2 class="text-3xl md:text-4xl font-extrabold mb-8">
           جدیدترین <span class="text-blue-400">اخبار ما</span> را دنبال کنید.
         </h2>
